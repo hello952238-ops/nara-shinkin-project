@@ -1,0 +1,577 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*--------------------------------------------------------
+　PC
+--------------------------------------------------------*/
+
+@media print, screen and (min-width: 961px) {
+
+    header .slide_nav li.parent:nth-child(4) {
+        border-bottom: 2px solid #6faf69;
+    }
+
+    section.crosstalk_intro {
+        padding: clamp(calc(56px * 0.672), 3.91vw, 56px) 0 clamp(calc(76px * 0.672), 5.31vw, 76px);
+    }
+
+    section.crosstalk_intro .section_inner {
+        display: flex;
+        align-items: center;
+		position: relative;
+		padding-left: 12.5%;
+    }
+
+    section.crosstalk_intro figure {
+        width: clamp(calc(136px * 0.672), 9.51vw, 136px);
+        flex-shrink: 0;
+        line-height: 0;
+        margin-right: clamp(calc(70px * 0.672), 4.89vw, 70px);
+        position: absolute;
+		top: -96px;
+		left: 0;
+        z-index: 2;
+    }
+
+    section.crosstalk_intro p {
+        font-size: clamp(calc(1.4rem * 0.672), 0.97vw, 1.4rem);
+        line-height: 2.5;
+        letter-spacing: 0.04em;
+    }
+
+    section.crosstalk_members {
+        padding-bottom: 8.6vw;
+    }
+
+    section.crosstalk_members .section_inner {
+        background: #f4f1ee;
+        border-radius: 0 clamp(calc(28px * 0.672), 1.95vw, 28px) 0 clamp(calc(28px * 0.672), 1.95vw, 28px);
+        padding: clamp(calc(54px * 0.672), 3.77vw, 54px) clamp(calc(130px * 0.672), 9.09vw, 130px) clamp(calc(72px * 0.672), 5.03vw, 72px);
+    }
+
+    section.crosstalk_members h3 {
+        display: flex;
+        align-items: flex-end;
+        gap: clamp(calc(32px * 0.672), 2.23vw, 32px);
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    section.crosstalk_members h3 span {
+        color: #58a448;
+        font-size: clamp(calc(4.4rem * 0.672), 3.07vw, 4.4rem);
+        letter-spacing: 0.06em;
+    }
+
+    section.crosstalk_members h3 small {
+        font-size: clamp(calc(1.8rem * 0.672), 1.25vw, 1.8rem);
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.35em;
+    }
+
+    section.crosstalk_members .member_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: clamp(calc(58px * 0.672), 4.05vw, 58px) clamp(calc(105px * 0.672), 7.34vw, 105px);
+        margin-top: clamp(calc(48px * 0.672), 3.35vw, 48px);
+    }
+
+    section.crosstalk_members .member_card {
+        width: calc((100% - clamp(calc(105px * 0.672), 7.34vw, 105px)) / 2);
+    }
+
+    section.crosstalk_members .member_card figure {
+        overflow: hidden;
+        line-height: 0;
+        border-radius: clamp(calc(12px * 0.672), 0.83vw, 12px);
+    }
+
+    section.crosstalk_members .member_profile {
+        display: flex;
+        align-items: baseline;
+        gap: clamp(calc(20px * 0.672), 1.39vw, 20px);
+        margin-top: clamp(calc(17px * 0.672), 1.18vw, 17px);
+    }
+
+    section.crosstalk_members .member_profile h4 {
+        flex-shrink: 0;
+        font-size: clamp(calc(2rem * 0.672), 1.39vw, 2rem);
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: 0.08em;
+    }
+
+    section.crosstalk_members .member_profile p,
+    section.crosstalk_members .member_message {
+        font-size: clamp(calc(1.4rem * 0.672), 0.97vw, 1.4rem);
+        line-height: 1.9;
+        letter-spacing: 0.04em;
+    }
+
+    section.crosstalk_members .member_message {
+        margin-top: clamp(calc(8px * 0.672), 0.55vw, 8px);
+    }
+
+    .talk_body {
+        overflow: hidden;
+    }
+
+    section.talk_section {
+        padding: clamp(calc(48px * 0.672), 3.35vw, 48px) 0 clamp(calc(100px * 0.672), 6.99vw, 100px);
+    }
+	
+	section.talk_section.talk_section01 {
+		padding-top: 0;
+	}
+
+    section.talk_section h3 {
+        color: #5b9843;
+        font-size: clamp(calc(3.0rem * 0.672), 2.09vw, 3.0rem);
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.06em;
+    }
+
+    section.talk_section h4 {
+        display: flex;
+        align-items: center;
+        gap: clamp(calc(18px * 0.672), 1.25vw, 18px);
+        font-size: clamp(calc(2.0rem * 0.672), 1.39vw, 2.0rem);
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        margin-top: clamp(calc(34px * 0.672), 2.37vw, 34px);
+    }
+
+    section.talk_section h4 span {
+        width: clamp(calc(72px * 0.672), 5.03vw, 72px);
+        height: 1px;
+        display: block;
+        background: #333;
+    }
+
+    .talk_lead_layout,
+    .talk_photo_layout {
+        display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+        align-items: start;
+        margin-top: clamp(calc(34px * 0.672), 2.37vw, 34px);
+        position: relative;
+    }
+
+    .talk_lead_layout > .talk_messages {
+        width: 50%;
+        flex-shrink: 0;
+    }
+
+    .talk_lead_layout > .talk_photo {
+        width: 55%;
+        flex-shrink: 0;
+    }
+
+    .talk_photo_layout.reverse > .talk_photo {
+        width: 46%;
+        flex-shrink: 0;
+    }
+
+    .talk_photo_layout.reverse > .talk_messages {
+        width: 54%;
+        flex-shrink: 0;
+    }
+
+    .talk_messages {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(calc(38px * 0.672), 1.74vw, 38px);
+    }
+
+    .talk_photo_layout.reverse .talk_messages {
+		width: 50.6%;
+    }
+
+    .talk_message {
+        display: flex;
+        gap: clamp(calc(20px * 0.672), 1.39vw, 20px);
+        align-items: start;
+    }
+
+    .talk_message .speaker {
+        width: 5.73vw;
+		width: 5.73cqw;
+		max-width: 82px;
+        flex-shrink: 0;
+        text-align: center;
+    }
+
+    .talk_message .speaker img {
+        display: block;
+        border-radius: 50%;
+    }
+
+    .talk_message .speaker span {
+        display: block;
+        font-size: clamp(calc(1.4rem * 0.672), 0.97vw, 1.4rem);
+        line-height: 1.3;
+        margin-top: 0.35em;
+    }
+
+    .talk_message > p {
+        flex: 1;
+        font-size: clamp(calc(1.4rem * 0.672), 0.97vw, 1.4rem);
+        line-height: 2.4;
+        letter-spacing: 0.035em;
+    }
+
+    .talk_photo {
+        line-height: 0;
+		margin-right: -10.5%;
+    }
+	
+	.talk_photo_layout.reverse > .talk_photo {
+        width: 55.9%;
+        margin-left: -10.5%;
+    }
+
+    .talk_photo img {
+        width: 100%;
+    }
+
+    .talk_messages_bottom {
+        width: 68%;
+        margin: clamp(calc(35px * 0.672), 2.44vw, 35px) 0 0 auto;
+        padding-right: 0;
+        position: relative;
+    }
+
+    section.talk_section02 {
+        padding-top: clamp(calc(38px * 0.672), 2.65vw, 38px);
+    }
+
+    section.talk_section02 .talk_messages_bottom {
+        width: 71%;
+        margin-left: 0;
+    }
+
+    .talk_wide_photo {
+        width: 100%;
+        line-height: 0;
+    }
+
+    .talk_wide_photo img {
+        width: 100%;
+    }
+
+    section.talk_section03 {
+        padding-top: clamp(calc(78px * 0.672), 5.45vw, 78px);
+    }
+
+    section.talk_section03 .talk_messages_bottom {
+        width: 71%;
+    }
+
+    section.talk_section04 {
+        padding-top: clamp(calc(78px * 0.672), 5.45vw, 78px);
+    }
+
+    section.talk_section04 .talk_photo_layout.reverse {
+        align-items: flex-start;
+    }
+
+    .talk_photo_stack {
+        width: 55.9%;
+        flex-shrink: 0;
+        line-height: 0;
+        margin-left: -10.5%;
+    }
+
+    .talk_photo_stack .talk_photo {
+        width: 100%;
+        margin: 0;
+    }
+
+    .talk_cloud {
+        width: clamp(calc(220px * 0.672), 15.38vw, 220px);
+        display: block;
+        line-height: 0;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .talk_cloud_right {
+        right: -11%;
+        bottom: -36px;
+    }
+
+    .talk_cloud_left {
+        top: auto;
+        bottom: 14%;
+        left: -12%;
+    }
+}
+
+
+@media screen and (min-width:961px) and (max-width: 1430px){
+	section.crosstalk_intro figure {
+		top: -6.7vw;
+    }
+
+    .talk_lead_layout > .talk_photo {
+        width: 55%;
+        margin-right: -8.6vw;
+		margin-right: -8.6cqw;
+    }
+
+    .talk_photo_layout.reverse > .talk_photo {
+        width: 55.9%;
+        margin-left: -8.6vw;
+		margin-left: -8.6cqw;
+    }
+
+    .talk_photo_stack {
+        margin-left: -8.6vw;
+        margin-left: -8.6cqw;
+    }
+
+    .talk_cloud_right {
+        bottom: -2.51vw;
+    }
+}
+
+/*--------------------------------------------------------
+　SP
+--------------------------------------------------------*/
+
+@media screen and (max-width: 960px) {
+
+    section.crosstalk_intro {
+        padding: 10vw 0 12vw;
+    }
+
+    section.crosstalk_intro .section_inner {
+        position: relative;
+    }
+
+    section.crosstalk_intro figure {
+        width: 22%;
+        line-height: 0;
+        position: absolute;
+		top: -28vw;
+		left: 0;
+        z-index: 2;
+    }
+
+    section.crosstalk_intro p {
+        width: 100%;
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        line-height: 2;
+        letter-spacing: 0.04em;
+    }
+
+    section.crosstalk_members {
+        padding-bottom: 14vw;
+    }
+
+    section.crosstalk_members .section_inner {
+        background: #f4f1ee;
+        border-radius: 0 4vw 0 4vw;
+        padding: 9vw 7vw 11vw;
+    }
+
+    section.crosstalk_members h3 {
+        display: flex;
+        align-items: flex-end;
+        gap: 5vw;
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    section.crosstalk_members h3 span {
+        color: #58a448;
+        font-size: clamp(calc(6rem * 0.375), 6.25vw, 6rem);
+        letter-spacing: 0.06em;
+    }
+
+    section.crosstalk_members h3 small {
+        font-size: clamp(calc(3.2rem * 0.375), 3.33vw, 3.2rem);
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.35em;
+    }
+
+    section.crosstalk_members .member_list {
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+        margin-top: 8vw;
+    }
+
+    section.crosstalk_members .member_card figure {
+        overflow: hidden;
+        line-height: 0;
+        border-radius: 2vw;
+    }
+
+    section.crosstalk_members .member_profile {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 1vw 4vw;
+        margin-top: 3vw;
+    }
+
+    section.crosstalk_members .member_profile h4 {
+        font-size: clamp(calc(4.4rem * 0.375), 4.58vw, 4.4rem);
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: 0.08em;
+    }
+
+    section.crosstalk_members .member_profile p,
+    section.crosstalk_members .member_message {
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        line-height: 1.9;
+        letter-spacing: 0.04em;
+    }
+
+    section.crosstalk_members .member_message {
+        margin-top: 1.5vw;
+    }
+
+    section.talk_section {
+        padding: 10vw 0 14vw;
+    }
+
+    section.talk_section h3 {
+        color: #5b9843;
+        font-size: clamp(calc(4.8rem * 0.375), 5vw, 4.8rem);
+        font-weight: 500;
+        line-height: 1.65;
+        letter-spacing: 0.05em;
+    }
+
+    section.talk_section h4 {
+        display: flex;
+        align-items: flex-start;
+        gap: 3vw;
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        font-weight: 500;
+        line-height: 1.7;
+        margin-top: 5vw;
+    }
+
+    section.talk_section h4 span {
+        width: 10vw;
+        height: 1px;
+        flex-shrink: 0;
+        display: block;
+        background: #333;
+        margin-top: 0.8em;
+    }
+
+    .talk_lead_layout,
+    .talk_photo_layout,
+    .talk_photo_layout.reverse {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7vw;
+    }
+
+    .talk_photo_layout.reverse .talk_photo {
+        order: 2;
+    }
+
+    .talk_messages {
+        display: flex;
+        flex-direction: column;
+        gap: 6vw;
+    }
+
+    .talk_message {
+        display: flex;
+        gap: 4vw;
+        align-items: start;
+    }
+
+    .talk_message .speaker {
+        width: 14vw;
+        flex-shrink: 0;
+        text-align: center;
+    }
+
+    .talk_message .speaker img {
+        display: block;
+        border-radius: 50%;
+    }
+
+    .talk_message .speaker span {
+        display: block;
+        font-size: clamp(calc(3.2rem * 0.375), 3.33vw, 3.2rem);
+        line-height: 1.3;
+        margin-top: 0.4em;
+    }
+
+    .talk_message > p {
+        flex: 1;
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        line-height: 2;
+        letter-spacing: 0.035em;
+    }
+
+    .talk_photo {
+        width: 100vw;
+        line-height: 0;
+        margin: 8vw 0 8vw -5vw;
+    }
+
+    .talk_messages_bottom,
+    section.talk_section02 .talk_messages_bottom {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .talk_wide_photo {
+        width: 100%;
+        line-height: 0;
+    }
+
+    section.talk_section03 {
+        padding-top: 12vw;
+    }
+
+    section.talk_section04 {
+        padding-top: 12vw;
+		padding-bottom: 0;
+    }
+
+    .talk_photo_stack {
+        width: 100vw;
+        margin: 8vw 0 0 -5vw;
+        order: 2;
+    }
+
+    .talk_photo_stack .talk_photo {
+        width: 100%;
+        margin: 0;
+    }
+
+    .talk_cloud {
+        width: 42vw;
+        display: block;
+        line-height: 0;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .talk_cloud_right {
+        right: -8%;
+        top: 63.5%;
+    }
+
+    .talk_cloud_left {
+        top: auto;
+        bottom: -15vw;
+        left: -8vw;
+    }
+
+}

@@ -395,9 +395,10 @@ footer div.f_block .f_block_inner nav.r_block ul li ul.sub a::after {
 	}
 
 	footer div.f_block {
-		width: 100%;
-		margin: 0;
-		padding: clamp(calc(51px * 0.672), 3.57vw, 51px) 5% clamp(calc(45px * 0.672), 3.15vw, 45px);
+		width: 90%;
+		max-width: 1300px;
+		margin: 0 auto;
+		padding: clamp(calc(51px * 0.672), 3.57vw, 51px) 0 0;
 	}
 
 	footer div.f_block .f_block_inner {
@@ -407,7 +408,6 @@ footer div.f_block .f_block_inner nav.r_block ul li ul.sub a::after {
 		flex-wrap: nowrap;
 		justify-content: space-between;
 		align-items: flex-start;
-		gap: 4%;
 		margin: 0;
 	}
 
