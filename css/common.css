@@ -337,7 +337,7 @@ footer div.f_block .f_block_inner nav.r_block ul li ul.sub a::after {
 		line-height: 1;
 		padding: 0.75em 2em 1.25em;
 		border-radius: 0 clamp(calc((20px * 0.672)), 1.39vw, 20px) 0 clamp(calc((20px * 0.672)), 1.39vw, 20px);
-		background: #6faf69;
+		background: #5b9843;
 		position: absolute;
 		top: 48.8%;
 		left: 8.2%;
@@ -655,7 +655,7 @@ footer div.f_block .f_block_inner nav.r_block ul li ul.sub a::after {
 		line-height: 1;
 		padding: 0.75em 1.5em 1.25em;
 		border-radius: 0 clamp(calc((20px * 0.672)), 1.39vw, 20px) 0 clamp(calc((20px * 0.672)), 1.39vw, 20px);
-		background: #6faf69;
+		background: #5b9843;
 		position: absolute;
 		bottom: 20%;
 		left: 8.2%;
