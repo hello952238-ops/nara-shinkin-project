@@ -369,6 +369,7 @@ footer div.f_block .f_block_inner nav.r_block ul li ul.sub a::after {
 	
 	section div.section_inner {
 		width: 82.8%;
+		max-width: 1184px;
 		margin: 0 auto;
 		position: relative;
 	}
