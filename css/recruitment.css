@@ -29,13 +29,21 @@
 }
 
 @keyframes recruitment-tab-fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .tab_panel.is-fading-in { animation: none; }
-    .faq_answer { transition: none; }
+    .tab_panel.is-fading-in {
+        animation: none;
+    }
+    .faq_answer {
+        transition: none;
+    }
 }
 
 /*--------------------------------------------------------
@@ -176,46 +184,225 @@
         z-index: 4;
     }
 
-    section.recruitment_requirements .requirements_heading { padding-bottom: clamp(calc(42px * 0.672), 2.93vw, 42px); }
-    section.recruitment_requirements h3 { display: flex; align-items: flex-end; gap: clamp(calc(34px * 0.672), 2.37vw, 34px); font-weight: 400; line-height: 1; }
-    section.recruitment_requirements h3 span { color: #589d43; font-size: clamp(calc(4.4rem * 0.672), 3.07vw, 4.4rem); letter-spacing: 0.06em; }
-    section.recruitment_requirements h3 small { font-size: clamp(calc(1.8rem * 0.672), 1.25vw, 1.8rem); font-weight: 500; border-bottom: 2px solid #333; padding-bottom: 0.35em; }
-    .recruitment_tabs .tab_list { width: 76%; display: flex; margin: 0 auto; }
-    .recruitment_tabs .tab_list button { width: calc(100% / 3); min-height: clamp(calc(58px * 0.672), 4.05vw, 58px); color: #589d43; background: #fff; border: 3px solid #589d43; border-bottom: 0; border-radius: clamp(calc(12px * 0.672), 0.83vw, 12px) clamp(calc(12px * 0.672), 0.83vw, 12px) 0 0; font-size: clamp(calc(1.7rem * 0.672), 1.18vw, 1.7rem); font-weight: 700; cursor: pointer; }
-    .recruitment_tabs .tab_list button + button { margin-left: clamp(calc(8px * 0.672), 0.55vw, 8px); }
-    .recruitment_tabs .tab_list button small { font-size: 70%; }
-    .recruitment_tabs .tab_list button[aria-selected="true"] { color: #fff; background: #589d43; }
-    .recruitment_tabs .tab_panels { min-height: clamp(calc(180px * 0.672), 12.58vw, 180px); background: #589d43; padding: clamp(calc(54px * 0.672), 3.77vw, 54px) 0 clamp(calc(95px * 0.672), 6.64vw, 95px); }
-    .recruitment_tabs .tab_panel[hidden] { display: none; }
-    .requirement_row, .requirement_table > div { display: flex; gap: clamp(calc(11px * 0.672), 0.76vw, 11px); }
-    .requirement_row h4, .requirement_table dt { width: 20%; flex-shrink: 0; display: flex; align-items: flex-start; background: rgba(255,255,255,.9); border-radius: clamp(calc(5px * 0.672), 0.34vw, 5px); padding: 1.25em 2em; font-size: clamp(calc(1.8rem * 0.672),1.25vw, 1.8rem); font-weight: 400; line-height: 1.6; }
-	.requirement_table dt { align-items: center; }
-    .selection_flow ol, .requirement_table dd { flex: 1; }
-    .selection_flow ol { display: flex; flex-direction: column; gap: clamp(calc(32px * 0.672), 2.23vw, 32px); }
-    .selection_flow li { min-height: clamp(calc(50px * 0.672), 3.49vw, 50px); list-style: none; background: #fff; border-radius: clamp(calc(5px * 0.672), 0.34vw, 5px); padding: 1.25em 2em; position: relative; font-size: clamp(calc(1.8rem * 0.672),1.25vw, 1.8rem); }
-    .selection_flow li:not(:last-child)::after { content: ""; width: clamp(calc(22px * 0.672), 1.53vw, 22px); height: clamp(calc(14px * 0.672), 0.97vw, 14px); background: url("../images/recruitment/arrow_flow.svg") center / contain no-repeat; position: absolute; left: 50%; bottom: -19px; transform: translateX(-50%); z-index: 2; }
-    .flow_note { color: #fff; font-size: clamp(calc(1.4rem * 0.672), 0.97vw, 1.4rem); line-height: 2; margin: clamp(calc(16px * 0.672), 1.11vw, 16px) 0 clamp(calc(28px * 0.672), 1.95vw, 28px) 21%; }
-    .requirement_table { display: flex; flex-direction: column; gap: clamp(calc(7px * 0.672), 0.48vw, 7px); }
-    .requirement_table dd { display: flex; flex-wrap: wrap; align-items: center; background: #fff; border-radius: clamp(calc(5px * 0.672), 0.34vw, 5px); padding: clamp(calc(18px * 0.672), 1.25vw, 18px) clamp(calc(25px * 0.672), 1.74vw, 25px); font-size: clamp(calc(1.8rem * 0.672), 1.25vw, 1.8rem); line-height: 1.65; }
-	.requirement_table dd p { width: 100%; }
-	.requirement_table dd p + p{ margin-top: 1em; }
+    section.recruitment_requirements .requirements_heading {
+        padding-bottom: clamp(calc(42px * 0.672), 2.93vw, 42px);
+    }
+    section.recruitment_requirements h3 {
+        display: flex;
+        align-items: flex-end;
+        gap: clamp(calc(34px * 0.672), 2.37vw, 34px);
+        font-weight: 400;
+        line-height: 1;
+    }
+    section.recruitment_requirements h3 span {
+        color: #589d43;
+        font-size: clamp(calc(4.4rem * 0.672), 3.07vw, 4.4rem);
+        letter-spacing: 0.06em;
+    }
+    section.recruitment_requirements h3 small {
+        font-size: clamp(calc(1.8rem * 0.672), 1.25vw, 1.8rem);
+        font-weight: 500;
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.35em;
+    }
+    .recruitment_tabs .tab_list {
+        width: 76%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .recruitment_tabs .tab_list button {
+        width: calc(100% / 3);
+        min-height: clamp(calc(58px * 0.672), 4.05vw, 58px);
+        color: #589d43;
+        background: #fff;
+        border: 3px solid #589d43;
+        border-bottom: 0;
+        border-radius: clamp(calc(12px * 0.672), 0.83vw, 12px) clamp(calc(12px * 0.672), 0.83vw, 12px) 0 0;
+        font-size: clamp(calc(1.7rem * 0.672), 1.18vw, 1.7rem);
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .recruitment_tabs .tab_list button + button {
+        margin-left: clamp(calc(8px * 0.672), 0.55vw, 8px);
+    }
+    .recruitment_tabs .tab_list button small {
+        font-size: 70%;
+    }
+    .recruitment_tabs .tab_list button[aria-selected="true"] {
+        color: #fff;
+        background: #589d43;
+    }
+    .recruitment_tabs .tab_panels {
+        min-height: clamp(calc(180px * 0.672), 12.58vw, 180px);
+        background: #589d43;
+        padding: clamp(calc(54px * 0.672), 3.77vw, 54px) 0 clamp(calc(95px * 0.672), 6.64vw, 95px);
+    }
+    .recruitment_tabs .tab_panel[hidden] {
+        display: none;
+    }
+    .requirement_row, .requirement_table > div {
+        display: flex;
+        gap: clamp(calc(11px * 0.672), 0.76vw, 11px);
+    }
+    .requirement_row h4, .requirement_table dt {
+        width: 20%;
+        flex-shrink: 0;
+        display: flex;
+        align-items: flex-start;
+        background: rgba(255,255,255,.9);
+        border-radius: clamp(calc(5px * 0.672), 0.34vw, 5px);
+        padding: 1.25em 2em;
+        font-size: clamp(calc(1.8rem * 0.672),1.25vw, 1.8rem);
+        font-weight: 400;
+        line-height: 1.6;
+    }
+	.requirement_table dt {
+	    align-items: center;
+	}
+    .selection_flow ol, .requirement_table dd {
+        flex: 1;
+    }
+    .selection_flow ol {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(calc(32px * 0.672), 2.23vw, 32px);
+    }
+    .selection_flow li {
+        min-height: clamp(calc(50px * 0.672), 3.49vw, 50px);
+        list-style: none;
+        background: #fff;
+        border-radius: clamp(calc(5px * 0.672), 0.34vw, 5px);
+        padding: 1.25em 2em;
+        position: relative;
+        font-size: clamp(calc(1.8rem * 0.672),1.25vw, 1.8rem);
+    }
+    .selection_flow li:not(:last-child)::after {
+        content: "";
+        width: clamp(calc(22px * 0.672), 1.53vw, 22px);
+        height: clamp(calc(14px * 0.672), 0.97vw, 14px);
+        background: url("../images/recruitment/arrow_flow.svg") center / contain no-repeat;
+        position: absolute;
+        left: 50%;
+        bottom: -19px;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+    .flow_note {
+        color: #fff;
+        font-size: clamp(calc(1.4rem * 0.672), 0.97vw, 1.4rem);
+        line-height: 2;
+        margin: clamp(calc(16px * 0.672), 1.11vw, 16px) 0 clamp(calc(28px * 0.672), 1.95vw, 28px) 21%;
+    }
+    .requirement_table {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(calc(7px * 0.672), 0.48vw, 7px);
+    }
+    .requirement_table dd {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background: #fff;
+        border-radius: clamp(calc(5px * 0.672), 0.34vw, 5px);
+        padding: clamp(calc(18px * 0.672), 1.25vw, 18px) clamp(calc(25px * 0.672), 1.74vw, 25px);
+        font-size: clamp(calc(1.8rem * 0.672), 1.25vw, 1.8rem);
+        line-height: 1.65;
+    }
+	.requirement_table dd p {
+	    width: 100%;
+	}
+	.requirement_table dd p + p {
+	    margin-top: 1em;
+	}
 
-    section.recruitment_faq { background: #f4f1ee; padding: clamp(calc(82px * 0.672), 5.73vw, 82px) 0 clamp(calc(100px * 0.672), 6.99vw, 100px); }
-    section.recruitment_faq h3 { display: flex; align-items: flex-end; gap: clamp(calc(34px * 0.672), 2.37vw, 34px); font-weight: 400; line-height: 1; }
-    section.recruitment_faq h3 span { color: #589d43; font-size: clamp(calc(4.4rem * 0.672), 3.07vw, 4.4rem); }
-    section.recruitment_faq h3 small { font-size: clamp(calc(1.8rem * 0.672), 1.25vw, 1.8rem); font-weight: 500; border-bottom: 2px solid #333; padding-bottom: 0.35em; }
-    .faq_list { display: flex; flex-direction: column; gap: clamp(calc(14px * 0.672), 0.97vw, 14px); margin-top: clamp(calc(43px * 0.672), 3vw, 43px); }
-    .faq_item { background: #fff; border-radius: clamp(calc(7px * 0.672), 0.48vw, 7px); overflow: hidden; }
-    .faq_item button { width: 100%; min-height: clamp(calc(62px * 0.672), 4.33vw, 62px); display: flex; align-items: center; gap: clamp(calc(16px * 0.672), 1.11vw, 16px); padding: 1em; text-align: left; cursor: pointer; }
-    .faq_item button > img:first-child, .faq_answer_content > img { width: clamp(calc(36px * 0.672), 2.51vw, 36px); flex-shrink: 0; }
-    .faq_item button span { flex: 1; color: #589d43; font-size: clamp(calc(1.6rem * 0.672), 1.11vw, 1.6rem); font-weight: 500; }
-    .faq_item button .faq_arrow { width: clamp(calc(22px * 0.672), 1.53vw, 22px); flex-shrink: 0; transform: rotate(180deg); transition: transform 0.3s ease; }
-    .faq_item button[aria-expanded="true"] .faq_arrow { transform: rotate(0deg); }
-    .faq_answer_content { display: flex; align-items: flex-start; gap: clamp(calc(16px * 0.672), 1.11vw, 16px); border-top: 1px solid #589d43; padding: 1em 2.5em 1em 1em; }
-    .faq_answer[hidden] { display: none; }
-    .faq_answer p { font-size: clamp(calc(1.6rem * 0.672), 1.11vw, 1.6rem); line-height: 2; }
-    footer { position: relative; }
-    footer .faq_chara { width: 8.95vw; max-width: 128px; display: block; line-height: 0; position: absolute; right: 13%; top: -171px; z-index: 2; }
+    section.recruitment_faq {
+        background: #f4f1ee;
+        padding: clamp(calc(82px * 0.672), 5.73vw, 82px) 0 clamp(calc(100px * 0.672), 6.99vw, 100px);
+    }
+    section.recruitment_faq h3 {
+        display: flex;
+        align-items: flex-end;
+        gap: clamp(calc(34px * 0.672), 2.37vw, 34px);
+        font-weight: 400;
+        line-height: 1;
+    }
+    section.recruitment_faq h3 span {
+        color: #589d43;
+        font-size: clamp(calc(4.4rem * 0.672), 3.07vw, 4.4rem);
+    }
+    section.recruitment_faq h3 small {
+        font-size: clamp(calc(1.8rem * 0.672), 1.25vw, 1.8rem);
+        font-weight: 500;
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.35em;
+    }
+    .faq_list {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(calc(14px * 0.672), 0.97vw, 14px);
+        margin-top: clamp(calc(43px * 0.672), 3vw, 43px);
+    }
+    .faq_item {
+        background: #fff;
+        border-radius: clamp(calc(7px * 0.672), 0.48vw, 7px);
+        overflow: hidden;
+    }
+    .faq_item button {
+        width: 100%;
+        min-height: clamp(calc(62px * 0.672), 4.33vw, 62px);
+        display: flex;
+        align-items: center;
+        gap: clamp(calc(16px * 0.672), 1.11vw, 16px);
+        padding: 1em;
+        text-align: left;
+        cursor: pointer;
+    }
+    .faq_item button > img:first-child, .faq_answer_content > img {
+        width: clamp(calc(36px * 0.672), 2.51vw, 36px);
+        flex-shrink: 0;
+    }
+    .faq_item button span {
+        flex: 1;
+        color: #589d43;
+        font-size: clamp(calc(1.6rem * 0.672), 1.11vw, 1.6rem);
+        font-weight: 500;
+    }
+    .faq_item button .faq_arrow {
+        width: clamp(calc(22px * 0.672), 1.53vw, 22px);
+        flex-shrink: 0;
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+    .faq_item button[aria-expanded="true"] .faq_arrow {
+        transform: rotate(0deg);
+    }
+    .faq_answer_content {
+        display: flex;
+        align-items: flex-start;
+        gap: clamp(calc(16px * 0.672), 1.11vw, 16px);
+        border-top: 1px solid #589d43;
+        padding: 1em 2.5em 1em 1em;
+    }
+    .faq_answer[hidden] {
+        display: none;
+    }
+    .faq_answer p {
+        font-size: clamp(calc(1.6rem * 0.672), 1.11vw, 1.6rem);
+        line-height: 2;
+    }
+    footer {
+        position: relative;
+    }
+    footer .faq_chara {
+        width: 8.95vw;
+        max-width: 128px;
+        display: block;
+        line-height: 0;
+        position: absolute;
+        right: 13%;
+        top: -171px;
+        z-index: 2;
+    }
 }
 
 @media screen and (min-width: 961px) and (max-width: 1430px) {
@@ -374,41 +561,201 @@
 		margin: 5cqw 0 0 66cqw;
     }
 
-    section.recruitment_requirements .requirements_heading { padding-bottom: 8vw; }
-    section.recruitment_requirements h3 { display: flex; align-items: flex-end; gap: 5vw; font-weight: 400; line-height: 1; }
-    section.recruitment_requirements h3 span { color: #589d43; font-size: clamp(calc(6rem * 0.375), 6.25vw, 6rem); }
-    section.recruitment_requirements h3 small { font-size: clamp(calc(3.2rem * 0.375), 3.33vw, 3.2rem); border-bottom: 2px solid #333; padding-bottom: 0.35em; }
-    .recruitment_tabs .tab_list { display: flex; overflow: hidden; }
-    .recruitment_tabs .tab_list button { width: calc(100% / 3); min-height: 15vw; flex-shrink: 1; color: #589d43; background: #fff; border: 2px solid #589d43; border-bottom: 0; border-radius: 2vw 2vw 0 0; padding: 1.5vw 1vw; font-size: clamp(calc(3.2rem * 0.375), 3.33vw, 3.2rem); font-weight: 700; line-height: 1.6; }
-    .recruitment_tabs .tab_list button + button { margin-left: 1vw; }
-    .recruitment_tabs .tab_list button small { display: block; font-size: 74%; }
-    .recruitment_tabs .tab_list button[aria-selected="true"] { color: #fff; background: #589d43; }
-    .recruitment_tabs .tab_panels { min-height: 40vw; background: #589d43; padding: 9vw 0 14vw; }
-    .recruitment_tabs .tab_panel > .section_inner { width: 94%; }
-    .requirement_row, .requirement_table > div { display: flex; flex-direction: column; gap: 1.5vw; }
-    .requirement_row h4, .requirement_table dt, .requirement_table dd { width: 100%; background: rgba(255,255,255,.9); border-radius: 1vw; padding: 4vw; font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem); line-height: 1.7; }
-    .selection_flow ol { display: flex; flex-direction: column; gap: 6vw; }
-    .selection_flow li { min-height: 13vw; list-style: none; background: #fff; border-radius: 1vw; padding: 3vw 4vw; position: relative; font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem); }
-    .selection_flow li:not(:last-child)::after { content: ""; width: 5vw; height: 3.5vw; background: url("../images/recruitment/arrow_flow.svg") center / contain no-repeat; position: absolute; left: 50%; bottom: -4.8vw; transform: translateX(-50%); }
-    .flow_note { color: #fff; font-size: clamp(calc(3rem * 0.375), 3.12vw, 3rem); line-height: 1.7; margin: 4vw 0 7vw; }
-    .requirement_table { display: flex; flex-direction: column; gap: 2.5vw; }
-    .requirement_table dd { background: #fff; }
-	.requirement_table dd p + p{ margin-top: 1em; }
+    section.recruitment_requirements .requirements_heading {
+        padding-bottom: 8vw;
+    }
+    section.recruitment_requirements h3 {
+        display: flex;
+        align-items: flex-end;
+        gap: 5vw;
+        font-weight: 400;
+        line-height: 1;
+    }
+    section.recruitment_requirements h3 span {
+        color: #589d43;
+        font-size: clamp(calc(6rem * 0.375), 6.25vw, 6rem);
+    }
+    section.recruitment_requirements h3 small {
+        font-size: clamp(calc(3.2rem * 0.375), 3.33vw, 3.2rem);
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.35em;
+    }
+    .recruitment_tabs .tab_list {
+        display: flex;
+        overflow: hidden;
+    }
+    .recruitment_tabs .tab_list button {
+        width: calc(100% / 3);
+        min-height: 15vw;
+        flex-shrink: 1;
+        color: #589d43;
+        background: #fff;
+        border: 2px solid #589d43;
+        border-bottom: 0;
+        border-radius: 2vw 2vw 0 0;
+        padding: 1.5vw 1vw;
+        font-size: clamp(calc(3.2rem * 0.375), 3.33vw, 3.2rem);
+        font-weight: 700;
+        line-height: 1.6;
+    }
+    .recruitment_tabs .tab_list button + button {
+        margin-left: 1vw;
+    }
+    .recruitment_tabs .tab_list button small {
+        display: block;
+        font-size: 74%;
+    }
+    .recruitment_tabs .tab_list button[aria-selected="true"] {
+        color: #fff;
+        background: #589d43;
+    }
+    .recruitment_tabs .tab_panels {
+        min-height: 40vw;
+        background: #589d43;
+        padding: 9vw 0 14vw;
+    }
+    .recruitment_tabs .tab_panel > .section_inner {
+        width: 94%;
+    }
+    .requirement_row, .requirement_table > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+    }
+    .requirement_row h4, .requirement_table dt, .requirement_table dd {
+        width: 100%;
+        background: rgba(255,255,255,.9);
+        border-radius: 1vw;
+        padding: 4vw;
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        line-height: 1.7;
+    }
+    .selection_flow ol {
+        display: flex;
+        flex-direction: column;
+        gap: 6vw;
+    }
+    .selection_flow li {
+        min-height: 13vw;
+        list-style: none;
+        background: #fff;
+        border-radius: 1vw;
+        padding: 3vw 4vw;
+        position: relative;
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+    }
+    .selection_flow li:not(:last-child)::after {
+        content: "";
+        width: 5vw;
+        height: 3.5vw;
+        background: url("../images/recruitment/arrow_flow.svg") center / contain no-repeat;
+        position: absolute;
+        left: 50%;
+        bottom: -4.8vw;
+        transform: translateX(-50%);
+    }
+    .flow_note {
+        color: #fff;
+        font-size: clamp(calc(3rem * 0.375), 3.12vw, 3rem);
+        line-height: 1.7;
+        margin: 4vw 0 7vw;
+    }
+    .requirement_table {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5vw;
+    }
+    .requirement_table dd {
+        background: #fff;
+    }
+	.requirement_table dd p + p {
+	    margin-top: 1em;
+	}
 
-    section.recruitment_faq { background: #f4f1ee; padding: 13vw 0 20vw; }
-    section.recruitment_faq h3 { display: flex; align-items: flex-end; gap: 5vw; font-weight: 400; line-height: 1; }
-    section.recruitment_faq h3 span { color: #589d43; font-size: clamp(calc(6rem * 0.375), 6.25vw, 6rem); }
-    section.recruitment_faq h3 small { font-size: clamp(calc(3.2rem * 0.375), 3.33vw, 3.2rem); border-bottom: 2px solid #333; padding-bottom: 0.35em; }
-    .faq_list { display: flex; flex-direction: column; gap: 3vw; margin-top: 8vw; }
-    .faq_item { background: #fff; border-radius: 1.5vw; overflow: hidden; }
-    .faq_item button { width: 100%; min-height: 15vw; display: flex; align-items: center; gap: 3vw; padding: 2.5vw 3vw; text-align: left; }
-    .faq_item button > img:first-child, .faq_answer_content > img { width: 8vw; flex-shrink: 0; }
-    .faq_item button span { flex: 1; color: #589d43; font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem); font-weight: 500; line-height: 1.6; }
-    .faq_item button .faq_arrow { width: 5vw; flex-shrink: 0; transform: rotate(180deg); transition: transform 0.3s ease; }
-    .faq_item button[aria-expanded="true"] .faq_arrow { transform: rotate(0deg); }
-    .faq_answer_content { display: flex; align-items: flex-start; gap: 3vw; border-top: 1px solid #589d43; padding: 4vw 3vw; }
-    .faq_answer[hidden] { display: none; }
-    .faq_answer p { font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem); line-height: 2; }
-    footer { position: relative; }
-    footer .faq_chara { width: 18vw; display: block; line-height: 0; position: absolute; right: 5vw; top: -15vw; z-index: 2; }
+    section.recruitment_faq {
+        background: #f4f1ee;
+        padding: 13vw 0 20vw;
+    }
+    section.recruitment_faq h3 {
+        display: flex;
+        align-items: flex-end;
+        gap: 5vw;
+        font-weight: 400;
+        line-height: 1;
+    }
+    section.recruitment_faq h3 span {
+        color: #589d43;
+        font-size: clamp(calc(6rem * 0.375), 6.25vw, 6rem);
+    }
+    section.recruitment_faq h3 small {
+        font-size: clamp(calc(3.2rem * 0.375), 3.33vw, 3.2rem);
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.35em;
+    }
+    .faq_list {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        margin-top: 8vw;
+    }
+    .faq_item {
+        background: #fff;
+        border-radius: 1.5vw;
+        overflow: hidden;
+    }
+    .faq_item button {
+        width: 100%;
+        min-height: 15vw;
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+        padding: 2.5vw 3vw;
+        text-align: left;
+    }
+    .faq_item button > img:first-child, .faq_answer_content > img {
+        width: 8vw;
+        flex-shrink: 0;
+    }
+    .faq_item button span {
+        flex: 1;
+        color: #589d43;
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        font-weight: 500;
+        line-height: 1.6;
+    }
+    .faq_item button .faq_arrow {
+        width: 5vw;
+        flex-shrink: 0;
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+    .faq_item button[aria-expanded="true"] .faq_arrow {
+        transform: rotate(0deg);
+    }
+    .faq_answer_content {
+        display: flex;
+        align-items: flex-start;
+        gap: 3vw;
+        border-top: 1px solid #589d43;
+        padding: 4vw 3vw;
+    }
+    .faq_answer[hidden] {
+        display: none;
+    }
+    .faq_answer p {
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        line-height: 2;
+    }
+    footer {
+        position: relative;
+    }
+    footer .faq_chara {
+        width: 18vw;
+        display: block;
+        line-height: 0;
+        position: absolute;
+        right: 5vw;
+        top: -15vw;
+        z-index: 2;
+    }
 }

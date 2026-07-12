@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 257.18 216.5">
+    <g fill="none" stroke-miterlimit="10">
+        <g stroke="#ccc" stroke-dasharray="2 4">
+            <path d="M20 22.5h237M20 54h237M20 85.6h237M20 117.1h237M20 148.7h237M20 180.3h237"/>
+        </g>
+        <path d="M19.7 22.5v189.3h235.2M19.7 211.8h6.5M254.9 211.8v-4.7" stroke="#000"/>
+    </g>
+    <g fill="#000" font-family="Noto Sans JP, sans-serif" font-size="10" text-anchor="end">
+        <text x="15" y="26">12</text><text x="15" y="57.5">10</text>
+        <text x="15" y="89">8</text><text x="15" y="120.5">6</text>
+        <text x="15" y="152">4</text><text x="15" y="183.5">2</text>
+        <text x="15" y="215.5">0</text>
+    </g>
+    <text x="7" y="11" fill="#000" font-family="Noto Sans JP, sans-serif" font-size="11">名</text>
+</svg>

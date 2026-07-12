@@ -1,0 +1,1034 @@
+@charset "UTF-8";
+
+.data_intro {
+    background: #fff;
+}
+
+.data_intro figure {
+    line-height: 0;
+}
+
+.data_contents {
+    background: #f4f1ee;
+    position: relative;
+}
+
+.data_cards {
+    display: flex;
+}
+
+.data_stats,
+.data_stats_column {
+    display: flex;
+}
+
+.data_stats_column {
+    flex-direction: column;
+}
+
+.data_stats .data_card_value b {
+    color: #000;
+    line-height: 1;
+}
+
+.data_card_staff .data_number,
+.data_card_age .data_number,
+.data_card_new_staff .data_number,
+.data_card_tenure .data_number {
+    color: #58a13e;
+}
+
+.data_card_overtime .data_number {
+    color: #cf762b;
+}
+
+.staff_chart {
+    flex: 1;
+    background: url("../images/data/graf_bg.svg") center / 100% 100% no-repeat;
+    position: relative;
+}
+
+.chart_unit,
+.chart_scale {
+    display: none;
+}
+
+.chart_bars {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    top: 15.2%;
+    right: 0.88%;
+    bottom: 7.4%;
+    left: 7.66%;
+}
+
+.chart_bar {
+    height: calc(var(--chart-value) / 12 * 100%);
+    display: flex;
+    justify-content: center;
+    background: #58a13e;
+    transform: scaleY(0);
+    transform-origin: center bottom;
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.chart_bar.is-animated {
+    transform: scaleY(1);
+}
+
+.chart_bar_latest {
+    background: #ffe653;
+}
+
+.chart_bar b {
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.chart_bar_latest b {
+    color: #222;
+}
+
+.data_cloud {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.data_contents > .section_inner {
+    z-index: 1;
+}
+
+.data_leave,
+.data_leave_column,
+.leave_summary,
+.leave_charts {
+    display: flex;
+}
+
+.data_leave_column {
+    flex-direction: column;
+}
+
+.data_card_paid_leave .data_number,
+.data_card_female_manager .data_number,
+.leave_summary p:last-child .data_number {
+    color: #58a13e;
+}
+
+.leave_summary .data_number {
+    color: #cf762b;
+    line-height: 0.72;
+}
+
+.leave_summary p {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.04em;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.leave_summary p > span,
+.leave_summary b {
+    color: #000;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.leave_charts {
+    justify-content: space-between;
+}
+
+.leave_charts figure {
+    position: relative;
+}
+
+.donut_chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ffe653;
+    position: relative;
+}
+
+.leave_charts figure:last-child .donut_chart {
+    background: conic-gradient(#58a13e 0 var(--chart-angle), #ffe653 var(--chart-angle) 360deg);
+}
+
+.donut_separator {
+    width: 2px;
+    height: 50%;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    transform-origin: 50% 100%;
+    z-index: 1;
+}
+
+.donut_separator_end {
+    transform: rotate(var(--chart-angle));
+}
+
+.donut_chart::after {
+    content: "";
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    z-index: 2;
+}
+
+.donut_chart span {
+    color: #000;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.leave_charts figure > img,
+.leave_charts figcaption {
+    position: absolute;
+    z-index: 2;
+}
+
+.leave_charts figcaption {
+    color: #000;
+    white-space: nowrap;
+}
+
+.leave_charts figcaption strong {
+    font-weight: 400;
+}
+
+.data_card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: relative;
+}
+
+.data_card h3 {
+    width: fit-content;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.4;
+    border-bottom: 2px solid #000;
+}
+
+.data_card_value {
+    display: flex;
+    align-items: baseline;
+    color: #000;
+    line-height: 0.4;
+    white-space: nowrap;
+    position: relative;
+    z-index: 3;
+}
+
+.data_number {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.data_number .data_decimal {
+    font-size: 80%;
+    font-weight: inherit;
+}
+
+.data_card_founded .data_number {
+    color: #cd7e3c;
+}
+
+.data_card_shops .data_number {
+    color: #5b9843;
+}
+
+.data_card_value span,
+.data_card_value b {
+    font-weight: 700;
+}
+
+.data_card_value b {
+    display: block;
+}
+
+.data_card > p {
+    color: #222;
+    margin-top: auto;
+}
+
+.data_card_icon,
+.shop_map {
+    position: absolute;
+}
+
+.shop_map {
+    line-height: 0;
+    z-index: 2;
+}
+
+.map_pin {
+    width: 1%;
+    position: absolute;
+    line-height: 0;
+}
+
+.data-animation-ready .map_pin {
+    opacity: 0;
+    transform: translateY(-18px);
+    transition: opacity 0.3s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.data-animation-ready .map_pin.is-animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .chart_bar {
+        transform: scaleY(1);
+        transition: none;
+    }
+
+    .data-animation-ready .map_pin {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+.pin01 { top: 42.79%; left: 67.45%; }
+.pin02 { top: 43%; left: 66.62%; }
+.pin03 { top: 42.93%; left: 65.1%; }
+.pin04 { top: 43.59%; left: 68.92%; }
+.pin05 { top: 42.06%; left: 71.43%; }
+.pin06 { top: 43.42%; left: 70.14%; }
+.pin07 { top: 43.67%; left: 70.72%; }
+.pin08 { top: 46.74%; left: 65.37%; }
+.pin09 { top: 42.05%; left: 68.5%; }
+.pin10 { top: 43.95%; left: 71.5%; }
+.pin11 { top: 44.61%; left: 70.65%; }
+.pin12 { top: 45.1%; left: 68.91%; }
+.pin13 { top: 46.17%; left: 67.96%; }
+.pin14 { top: 46.4%; left: 68.96%; }
+.pin15 { top: 47.17%; left: 71.23%; }
+
+@media print, screen and (min-width: 961px) {
+    header .slide_nav li.parent:nth-child(4) {
+        border-bottom: 2px solid #6faf69;
+    }
+	
+	section div.section_inner {
+		width: 84%;
+		max-width: 1200px;
+	}
+	
+
+    .data_intro .section_inner {
+        min-height: clamp(calc(170px * 0.672), 11.89vw, 170px);
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .data_intro figure {
+        width: clamp(calc(120px * 0.672), 8.39vw, 120px);
+        position: absolute;
+        top: -68px;
+        left: clamp(calc(22px * 0.672), 1.54vw, 22px);
+        z-index: 2;
+    }
+
+    .data_intro p {
+        padding-left: clamp(calc(178px * 0.672), 12.45vw, 178px);
+        font-size: clamp(calc(1.4rem * 0.672), 0.98vw, 1.4rem);
+        line-height: 2;
+        letter-spacing: 0.03em;
+    }
+
+    .data_contents {
+        padding: clamp(calc(54px * 0.672), 3.78vw, 54px) 0 clamp(calc(70px * 0.672), 4.9vw, 70px);
+    }
+
+    .data_cards {
+        gap: clamp(calc(42px * 0.672), 2.94vw, 42px);
+    }
+
+    .data_stats {
+        gap: clamp(calc(42px * 0.672), 2.94vw, 42px);
+        margin-top: clamp(calc(34px * 0.672), 2.37vw, 34px);
+    }
+
+    .data_stats_column {
+        width: 31.9%;
+    }
+	
+	.data_stats_column:first-of-type {
+        width: 34%;
+    }
+
+    .data_card_new_staff {
+        width: 27%;
+    }
+
+    .data_stats_column {
+        gap: clamp(calc(34px * 0.672), 2.37vw, 34px);
+    }
+
+    .data_stats .data_card {
+        min-height: clamp(calc(210px * 0.672), 14.69vw, 210px);
+        padding: clamp(calc(25px * 0.672), 1.75vw, 25px) clamp(calc(32px * 0.672), 2.24vw, 32px);
+        border-radius: clamp(calc(12px * 0.672), 0.84vw, 12px);
+    }
+
+    .data_stats_column .data_card {
+        flex: 1;
+    }
+
+    .data_stats .data_card_value {
+        padding: clamp(calc(25px * 0.672), 1.75vw, 25px) 0 clamp(calc(8px * 0.672), 0.56vw, 8px);
+    }
+
+    .data_stats .data_card_value > .data_number {
+        font-size: clamp(calc(12.93rem * 0.672), 9.04vw, 12.93rem);
+    }
+
+    .data_stats .data_card_value > span {
+        font-size: clamp(calc(4rem * 0.672), 2.8vw, 4rem);
+        margin-left: 0.08em;
+    }
+
+    .data_stats .data_card_value b {
+        font-size: clamp(calc(2rem * 0.672), 1.4vw, 2rem);
+        margin-left: 0.55em;
+    }
+
+    .data_card_staff .data_card_icon {
+        width: clamp(calc(115px * 0.672), 8.04vw, 115px);
+        top: clamp(calc(55px * 0.672), 3.85vw, 55px);
+        right: clamp(calc(28px * 0.672), 1.96vw, 28px);
+    }
+
+    .data_card_new_staff .data_card_icon {
+        width: 26%;
+        top: 13%;
+        right: 15%;
+    }
+
+    .data_card_age .data_card_icon {
+        width: clamp(calc(115px * 0.672), 8.04vw, 115px);
+        top: clamp(calc(45px * 0.672), 3.15vw, 45px);
+        right: clamp(calc(28px * 0.672), 1.96vw, 28px);
+    }
+
+    .data_card_tenure .data_card_icon {
+        width: clamp(calc(75px * 0.672), 5.24vw, 75px);
+        top: clamp(calc(105px * 0.672), 7.34vw, 105px);
+        right: clamp(calc(38px * 0.672), 2.66vw, 38px);
+    }
+
+    .data_card_overtime .data_card_icon {
+        width: 25%;
+        top: 8%;
+        right: 12%;
+    }
+
+    .staff_chart {
+        min-height: clamp(calc(190px * 0.672), 13.29vw, 190px);
+        margin-top: clamp(calc(22px * 0.672), 1.54vw, 22px);
+    }
+
+    .chart_bars {
+        padding: 0 clamp(calc(22px * 0.672), 1.54vw, 22px);
+        gap: clamp(calc(22px * 0.672), 1.54vw, 22px);
+    }
+
+    .chart_bar {
+        width: clamp(calc(44px * 0.672), 3.08vw, 44px);
+        flex-shrink: 0;
+    }
+
+    .chart_bar b {
+        font-size: clamp(calc(1.2rem * 0.672), 0.84vw, 1.2rem);
+    }
+
+    .data_cloud_left {
+        width: 21.6vw;
+		width: 21.6cqw;
+		max-width: 310px;
+        top: 54.5%;
+        left: -9.7%;
+		z-index: 5;
+    }
+
+    .data_cloud_right {
+        width: 19.58vw;
+		width: 19.58cqw;
+		max-width: 280px;
+        top: 26%;
+        right: 0;
+		z-index: 5;
+    }
+
+    .data_leave {
+        gap: clamp(calc(42px * 0.672), 2.94vw, 42px);
+        margin-top: clamp(calc(42px * 0.672), 2.94vw, 42px);
+    }
+
+    .data_leave_column {
+        width: 25.8%;
+        gap: clamp(calc(42px * 0.672), 2.94vw, 42px);
+    }
+
+    .data_card_parental_leave {
+        width: calc(74.2% - clamp(calc(42px * 0.672), 2.94vw, 42px));
+        align-self: stretch;
+    }
+
+    .data_leave .data_card {
+        min-height: clamp(calc(210px * 0.672), 14.69vw, 210px);
+        padding: clamp(calc(25px * 0.672), 1.75vw, 25px) clamp(calc(32px * 0.672), 2.24vw, 32px);
+    }
+
+    .data_leave_column .data_card {
+        flex: 1;
+    }
+
+    .data_leave .data_card_value {
+        padding: clamp(calc(18px * 0.672), 1.26vw, 18px) 0 clamp(calc(8px * 0.672), 0.56vw, 8px);
+    }
+
+    .data_leave .data_card_value > .data_number {
+        font-size: clamp(calc(12.93rem * 0.672), 9.04vw, 12.93rem);
+    }
+
+    .data_leave .data_card_value > span {
+        font-size: clamp(calc(4rem * 0.672), 2.8vw, 4rem);
+    }
+
+    .data_card_paid_leave .data_card_icon {
+        width: clamp(calc(90px * 0.672), 6.29vw, 90px);
+        top: clamp(calc(25px * 0.672), 1.75vw, 25px);
+        right: clamp(calc(15px * 0.672), 1.05vw, 15px);
+    }
+
+    .data_card_female_manager .data_card_icon {
+        width: clamp(calc(65px * 0.672), 4.55vw, 65px);
+        top: clamp(calc(25px * 0.672), 1.75vw, 25px);
+        right: clamp(calc(22px * 0.672), 1.54vw, 22px);
+    }
+
+    .leave_summary {
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: clamp(calc(20px * 0.672), 1.4vw, 20px);
+        gap: clamp(calc(18px * 0.672), 1.26vw, 18px);
+    }
+
+    .leave_summary p > span {
+        font-size: clamp(calc(2rem * 0.672), 1.4vw, 2rem);
+        margin-right: -1em;
+    }
+	
+	 .leave_summary p:last-of-type span {
+        margin-right: 0.25em;
+    }
+	
+	.leave_summary p:last-of-type strong span {
+		margin-right: 0;
+	}
+
+    .leave_summary .data_number {
+        font-size: clamp(calc(15.51rem * 0.672), 10.84vw, 15.51rem);
+        transform: translateY(0.055em);
+    }
+
+    .leave_summary p:last-child .data_number {
+        font-size: clamp(calc(12.93rem * 0.672), 9.04vw, 12.93rem);
+    }
+
+    .leave_summary b {
+        font-size: clamp(calc(4rem * 0.672), 2.8vw, 4rem);
+        transform: translateY(0.08em);
+    }
+
+    .leave_charts {
+        align-items: flex-start;
+        margin-top: clamp(calc(28px * 0.672), 1.96vw, 28px);
+        padding: 0 clamp(calc(38px * 0.672), 2.66vw, 38px);
+		margin-left: 2.5%;
+    }
+
+    .leave_charts figure {
+        width: 23%;
+    }
+
+    .donut_chart {
+        width: 100%;
+        aspect-ratio: 1;
+    }
+
+    .donut_chart span {
+        font-size: clamp(calc(1.4rem * 0.672), 0.98vw, 1.4rem);
+    }
+
+    .leave_charts figure > img {
+        width: 48%;
+        bottom: -12%;
+        left: -12%;
+    }
+
+    .leave_charts figcaption {
+        right: -27%;
+        bottom: -18%;
+    }
+
+    .leave_charts figcaption strong {
+        font-size: clamp(calc(6.72rem * 0.672), 4.69vw, 6.72rem);
+    }
+
+    .leave_charts figcaption span {
+        font-size: clamp(calc(1.8rem * 0.672), 1.26vw, 1.8rem);
+    }
+
+    .leave_note {
+        margin-top: auto;
+        padding-top: clamp(calc(32px * 0.672), 2.24vw, 32px);
+    }
+
+    .data_card {
+        min-height: clamp(calc(210px * 0.672), 14.69vw, 210px);
+        padding: clamp(calc(25px * 0.672), 1.75vw, 25px) clamp(calc(32px * 0.672), 2.24vw, 32px);
+        border-radius: clamp(calc(12px * 0.672), 0.84vw, 12px);
+    }
+
+    .data_card_founded {
+        width: 33.8%;
+    }
+
+    .data_card_shops {
+        width: 62.5%;
+    }
+
+    .data_card h3 {
+        font-size: clamp(calc(1.8rem * 0.672), 1.26vw, 1.8rem);
+        margin-bottom: clamp(calc(20px * 0.672), 1.4vw, 20px);
+    }
+	
+	.data_card_value {
+        padding: 28px 0 7px;
+    }
+
+    .data_card_founded .data_card_value > .data_number {
+        font-size: clamp(calc(15.51rem * 0.672), 10.84vw, 15.51rem);
+    }
+
+    .data_card_shops .data_card_value > .data_number {
+        font-size: clamp(calc(12.93rem * 0.672), 9.04vw, 12.93rem);
+    }
+
+    .data_card_founded .data_card_value span {
+        font-size: clamp(calc(4.6rem * 0.672), 3.21vw, 4.6rem);
+        margin-left: 0.08em;
+    }
+
+    .data_card_shops .data_card_value > span {
+        font-size: clamp(calc(4rem * 0.672), 2.8vw, 4rem);
+        margin-left: 0.08em;
+    }
+
+    .data_card_shops .data_card_value b {
+        font-size: clamp(calc(3rem * 0.672), 2.1vw, 3rem);
+        margin-left: 0.25em;
+        line-height: inherit;
+    }
+
+    .data_card_shops .data_card_value b .data_number {
+        font-size: clamp(calc(5.172rem * 0.672), 3.616vw, 5.172rem);
+    }
+
+    .data_card > p {
+        font-size: clamp(calc(1.4rem * 0.672), 0.97vw, 1.4rem);
+        padding-top: clamp(calc(8px * 0.672), 0.56vw, 8px);
+    }
+
+    .data_card_icon {
+        width: clamp(calc(75px * 0.672), 5.24vw, 75px);
+        top: clamp(calc(24px * 0.672), 1.68vw, 24px);
+        right: 10%;
+    }
+
+    .shop_map {
+        width: 41%;
+        top: -86px;
+        right: 2%;
+    }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1430px) {
+	
+	.data_card_value {
+        padding: 2vw 0 0.5vw;
+    }
+	
+    .data_intro figure {
+        top: -4.75vw;
+    }
+
+    .shop_map {
+        top: -6vw;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .data_intro {
+        padding: clamp(calc(150px * 0.375), 15.63vw, 150px) 0 clamp(calc(70px * 0.375), 7.29vw, 70px);
+    }
+
+    .data_intro .section_inner {
+        position: relative;
+    }
+
+    .data_intro figure {
+        width: 24%;
+        position: absolute;
+        top: -33vw;
+        left: 0;
+        z-index: 2;
+    }
+
+    .data_intro p {
+        width: 100%;
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        line-height: 2;
+        letter-spacing: 0.03em;
+    }
+
+    .data_contents {
+        padding: 12vw 0;
+    }
+
+    .data_cards {
+        flex-direction: column;
+        gap: 8vw;
+    }
+
+    .data_stats {
+        flex-direction: column;
+        gap: 8vw;
+        margin-top: 8vw;
+    }
+
+    .data_stats_column {
+        width: 100%;
+        gap: 8vw;
+    }
+
+    .data_stats .data_card,
+    .data_card_new_staff {
+        width: 100%;
+    }
+
+    .data_stats .data_card_value {
+        padding: 6vw 0 2vw;
+    }
+
+    .data_stats .data_card_value > .data_number {
+        font-size: 24vw;
+    }
+
+    .data_stats .data_card_value > span {
+        font-size: 8vw;
+    }
+
+    .data_stats .data_card_value b {
+        font-size: 5vw;
+        margin-left: 0.5em;
+    }
+
+    .data_card_staff .data_card_icon {
+        width: 28%;
+        top: 22%;
+        right: 12%;
+    }
+
+    .data_card_age .data_card_icon {
+        width: 32%;
+        top: 35%;
+        right: 8%;
+    }
+
+    .data_card_new_staff .data_card_icon {
+        width: 27%;
+        top: 12%;
+        right: 5%;
+    }
+
+    .data_card_tenure .data_card_icon {
+        width: 25%;
+        top: 36%;
+        right: 12%;
+    }
+
+    .data_card_overtime .data_card_icon {
+        width: 23vw;
+        top: 12vw;
+        right: 6vw;
+    }
+
+    .data_card_new_staff {
+        min-height: 115vw;
+    }
+
+    .staff_chart {
+        min-height: 55vw;
+        margin-top: 8vw;
+    }
+
+    .chart_scale {
+        width: 7vw;
+        padding-right: 1vw;
+        font-size: 2.6vw;
+    }
+
+    .chart_bars {
+        top: 10.37%;
+        bottom: 2.17%;
+        justify-content: space-around;
+        padding: 0 4%;
+        gap: 0;
+    }
+
+    .chart_bar {
+        width: 18%;
+    }
+
+    .chart_bar b {
+        font-size: 3.2vw;
+    }
+
+    .data_cloud_left {
+        width: 64vw;
+		width: 64cqw;
+        top: 190vw;
+		top: 190cqw;
+        left: -12vw;
+		z-index: 5;
+    }
+
+    .data_cloud_right {
+        width: 60vw;
+		width: 60cqw;
+        top: 366vw;
+		top: 366cqw;
+        right: -7vw;
+		z-index: 5;
+    }
+
+    .data_leave {
+        flex-direction: column;
+        gap: 8vw;
+        margin-top: 8vw;
+    }
+
+    .data_leave_column,
+    .data_card_parental_leave {
+        width: 100%;
+    }
+
+    .data_leave_column {
+        gap: 8vw;
+    }
+
+    .data_leave .data_card {
+        width: 100%;
+        padding: 6vw;
+    }
+
+    .data_leave .data_card_value > .data_number {
+        font-size: 24vw;
+    }
+
+    .data_leave .data_card_value > span {
+        font-size: 8vw;
+    }
+
+    .data_card_paid_leave .data_card_icon {
+        width: 29%;
+        top: 25%;
+        right: 10%;
+    }
+
+    .data_card_female_manager .data_card_icon {
+        width: 25%;
+        top: 15%;
+        right: 13%;
+    }
+
+    .data_card_parental_leave {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leave_summary,
+    .leave_charts {
+        display: contents;
+    }
+
+    .data_card_parental_leave h3 {
+        order: 0;
+        margin-bottom: 6vw;
+    }
+
+    .leave_summary p:nth-child(1) { order: 1; }
+    .leave_charts figure:nth-child(1) { order: 2; }
+    .leave_summary p:nth-child(2) { order: 3; }
+    .leave_charts figure:nth-child(2) { order: 4; }
+    .leave_summary p:nth-child(3) { order: 5; }
+    .leave_charts figure:nth-child(3) { order: 6; margin-bottom: 8vw; }
+
+    .leave_summary p {
+        width: 100%;
+		padding: 6vw 0 2vw;
+    }
+
+    .leave_summary p > span {
+        min-width: 16vw;
+        font-size: 5vw;
+        margin-right: -1em;
+		padding-bottom: 0.25em;
+    }
+
+    .leave_summary p:last-of-type > span {
+        margin-right: 0.25em;
+    }
+
+    .leave_summary p:last-of-type strong span {
+        margin-right: 0;
+    }
+
+    .leave_summary .data_number {
+        font-size: 29vw;
+    }
+
+    .leave_summary p:last-child .data_number {
+        font-size: 24vw;
+    }
+
+    .leave_summary b {
+        font-size: 8vw;
+    }
+
+    .leave_charts figure {
+        width: 48vw;
+        margin: 0 auto 16vw;
+    }
+
+    .donut_chart {
+        width: 100%;
+        aspect-ratio: 1;
+    }
+
+    .donut_chart span {
+        font-size: 4vw;
+    }
+
+    .leave_charts figure > img {
+        width: 48%;
+        bottom: -12%;
+        left: -12%;
+    }
+
+    .leave_charts figcaption {
+        right: -6%;
+        bottom: -16%;
+    }
+
+    .leave_charts figcaption strong {
+        font-size: 15vw;
+    }
+
+    .leave_charts figcaption span {
+        font-size: 5vw;
+    }
+
+    .leave_note {
+        order: 7;
+        margin-top: auto;
+        padding-top: 0;
+    }
+
+    .data_card {
+        width: 100%;
+        min-height: 47vw;
+        padding: 6vw;
+        border-radius: 3vw;
+    }
+
+    .data_card h3 {
+        font-size: clamp(calc(4.2rem * 0.375), 4.38vw, 4.2rem);
+        margin-bottom: 4vw;
+    }
+	
+	.data_card_value {
+        padding: 6vw 0 2vw;
+    }
+
+    .data_card_founded .data_card_value > .data_number {
+        font-size: 29vw;
+    }
+
+    .data_card_shops .data_card_value > .data_number {
+        font-size: 24vw;
+    }
+
+    .data_card_value span {
+        font-size: 8vw;
+    }
+
+    .data_card_shops .data_card_value b {
+        font-size: 5vw;
+        margin-left: 0.3em;
+        padding-bottom: 0.18em;
+    }
+
+    .data_card_shops .data_card_value b .data_number {
+        font-size: 9.6vw;
+    }
+
+    .data_card > p {
+        font-size: clamp(calc(3.2rem * 0.375), 3.33vw, 3.2rem);
+        margin-top: auto;
+        padding-top: 2vw;
+    }
+
+    .data_card_icon {
+        width: 18vw;
+        top: 6vw;
+        right: 8vw;
+    }
+	
+	.data_card_shops .data_card_value {
+		margin-top: 17vw;
+		margin-top: 17cqw;
+	}
+
+    .shop_map {
+        width: 48vw;
+        right: 2vw;
+        top: -16vw;
+		top: -16cqw;
+    }
+}

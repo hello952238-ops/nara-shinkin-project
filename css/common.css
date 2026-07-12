@@ -54,6 +54,10 @@ header,main,footer {
 	width: 100%;
 }
 
+header {
+	background: #FFF;
+}
+
 main{
 	contain: paint;
 }
