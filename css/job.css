@@ -1,0 +1,890 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------
+  職種紹介
+--------------------------------------------------------*/
+
+@media print, screen and (min-width: 961px) {
+    header .slide_nav li.parent:nth-child(3) {
+        border-bottom: 2px solid #6faf69;
+    }
+	
+	div#page_title div.title_box {
+		min-width: 30.7%;
+	}
+
+    section.job-intro {
+        min-height: clamp(calc(158px * 0.672), 11.05vw, 158px);
+        padding: clamp(calc(60px * 0.672), 4.2vw, 60px) 0 clamp(calc(42px * 0.672), 2.94vw, 42px);
+    }
+
+    section.job-intro .section_inner {
+        min-height: clamp(calc(56px * 0.672), 3.92vw, 56px);
+        display: flex;
+        align-items: center;
+    }
+
+    section.job-intro .job-intro__chara {
+        width: clamp(calc(210px * 0.672), 14.69vw, 210px);
+        line-height: 0;
+        position: absolute;
+		top: -110px;
+        left: 0;
+        z-index: 5;
+    }
+
+    section.job-intro p {
+        width: calc(100% - clamp(calc(230px * 0.672), 16.08vw, 230px));
+        font-size: clamp(calc(1.4rem * 0.672), 0.98vw, 1.4rem);
+        line-height: 1.9;
+        letter-spacing: 0.02em;
+        margin-left: auto;
+    }
+
+    section.job-map {
+        background: url("../images/common/bg_dot.png") repeat;
+        background-size: clamp(calc(3px * 0.672), 0.83vw, 3px);
+        padding: clamp(calc(78px * 0.672), 5.45vw, 78px) 0 clamp(calc(88px * 0.672), 6.15vw, 88px);
+    }
+
+    section.job-map h3 {
+        margin-bottom: clamp(calc(-24px * 0.672), -1.68vw, -16px);
+        position: relative;
+        z-index: 5;
+    }
+
+    section.job-map .job-map__customer {
+        width: 71%;
+        margin: -3.5% auto 0;
+        line-height: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    section.job-map .job-map__group {
+        width: 100%;
+        min-height: clamp(calc(344px * 0.672), 24.05vw, 344px);
+        background: #fff;
+        border: clamp(calc(4px * 0.672), 0.28vw, 4px) solid #6faf69;
+        border-radius: clamp(calc(14px * 0.672), 0.98vw, 14px);
+        padding: clamp(calc(40px * 0.672), 2.79vw, 40px) 8% clamp(calc(38px * 0.672), 2.66vw, 38px);
+        position: relative;
+        z-index: 3;
+    }
+
+    section.job-map .job-map__connector {
+        width: 21%;
+        aspect-ratio: 248.11 / 95.45;
+        display: block;
+        background: url("../images/job/arrow_up.svg") center / contain no-repeat;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        z-index: 3;
+    }
+	
+	section.job-map .job-map__connector:nth-child(2) {
+		 z-index: 10;
+	}
+
+    section.job-map .job-map__connector--branch {
+        margin-top: -2.6%;
+        margin-bottom: -2.5%;
+    }
+
+    section.job-map .job-map__connector--headquarters {
+        margin-top: clamp(calc(-20px * 0.672), -1.4vw, -13px);
+        margin-bottom: clamp(calc(-10px * 0.672), -0.7vw, -7px);
+    }
+
+    section.job-map .job-map__group h4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: clamp(calc(2.5rem * 0.672), 1.75vw, 2.5rem);
+        line-height: 1.25;
+        letter-spacing: 0.08em;
+        color: #6faf69;
+    }
+
+    section.job-map .job-map__group h4 img {
+        width: clamp(calc(80px * 0.672), 5.59vw, 80px);
+        height: clamp(calc(70px * 0.672), 4.9vw, 70px);
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        right: calc(100% + 0.7em);
+        transform: translateY(-50%);
+    }
+
+    section.job-map .job-map__group h4 span {
+        border-bottom: 3px solid #6faf69;
+        padding-bottom: 0.25em;
+        position: relative;
+    }
+
+    section.job-map .job-map__group ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: clamp(calc(28px * 0.672), 1.96vw, 28px) 5.6%;
+        margin-top: clamp(calc(28px * 0.672), 1.96vw, 28px);
+    }
+
+    section.job-map .job-map__group li {
+        width: 29.6%;
+    }
+
+    section.job-map .job-map__group a {
+        min-height: clamp(calc(62px * 0.672), 4.34vw, 62px);
+        display: flex;
+        align-items: center;
+        font-size: clamp(calc(1.8rem * 0.672), 1.26vw, 1.8rem);
+        line-height: 1.35;
+        letter-spacing: 0.04em;
+        color: #fff;
+        background: #6faf69 url("../images/job/arrow_y.svg") right 5% center / clamp(calc(20px * 0.672), 1.4vw, 20px) auto no-repeat;
+        border-radius: 0 clamp(calc(14px * 0.672), 0.98vw, 14px) 0 clamp(calc(14px * 0.672), 0.98vw, 14px);
+        padding: 0.65em 2.7em 0.65em 1.25em;
+    }
+
+    section.job-map .job-map__chara {
+        width: 8.5%;
+        position: absolute;
+        right: 15%;
+        bottom: -16%;
+        z-index: 5;
+    }
+
+    section.job-map .job-map__chara--headquarters {
+        right: 17%;
+        bottom: -18%;
+    }
+
+    section.job-roles {
+        padding: clamp(calc(82px * 0.672), 5.73vw, 82px) 0 clamp(calc(100px * 0.672), 6.99vw, 100px);
+    }
+
+    section.job-roles > .section_inner {
+        margin-bottom: clamp(calc(54px * 0.672), 3.78vw, 54px);
+    }
+
+    section.job-role {
+        padding: 0 0 clamp(calc(108px * 0.672), 7.55vw, 108px);
+        position: relative;
+    }
+
+    section.job-role + section.job-role {
+        padding-top: clamp(calc(20px * 0.672), 1.4vw, 20px);
+    }
+
+    section.job-role .section_inner {
+        display: flex;
+		flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+    }
+	
+	#job-loan .section_inner {
+		padding-bottom: 150px;
+	}
+
+    section.job-role .job-role__bg {
+        width: 63%;
+        height: 75%;
+        display: block;
+        background: #f7f3f0;
+        position: absolute;
+        bottom: 7%;
+        z-index: 0;
+    }
+
+    section.job-role--left .job-role__bg {
+		width: 64%;
+        height: 69%;
+		bottom: 10%;
+        left: 0;
+        transform-origin: left center;
+    }
+
+    section.job-role--right .job-role__bg {
+        width: 77%;
+		height: 72%;
+		bottom: 19%;
+        right: 0;
+        transform-origin: right center;
+    }
+
+    section.job-role .job-role__photo {
+        width: 47%;
+        line-height: 0;
+        overflow: hidden;
+        border-radius: 0 clamp(calc(20px * 0.672), 1.4vw, 20px) 0 clamp(calc(20px * 0.672), 1.4vw, 20px);
+    }
+
+    section.job-role .job-role__photo img {
+        width: 100%;
+        aspect-ratio: 1.244 / 1;
+        object-fit: cover;
+    }
+
+    section.job-role--left .section_inner {
+        align-items: stretch;
+    }
+
+    section.job-role--left .job-role__photo img {
+        height: 100%;
+    }
+
+    section.job-role--left .job-role__content {
+        min-height: 100%;
+    }
+
+    section.job-role--right .job-role__photo {
+        order: 2;
+    }
+
+    section.job-role .job-role__content {
+        width: 47%;
+        padding-top: clamp(calc(4px * 0.672), 0.28vw, 4px);
+    }
+
+    section.job-role--right .job-role__content {
+        padding-top: clamp(calc(102px * 0.672), 7.13vw, 102px);
+    }
+
+    section.job-role .job-role__heading {
+        border-top: 1px solid #333;
+    }
+
+    section.job-role .job-role__heading span {
+        display: block;
+        font-size: clamp(calc(1.6rem * 0.672), 1.11vw, 1.6rem);
+        font-weight: 600;
+        border-bottom: 1px solid #333;
+        padding: 0.55em 0;
+    }
+
+    section.job-role .job-role__heading h4 {
+        font-size: clamp(calc(2.4rem * 0.672), 1.68vw, 2.4rem);
+        line-height: 1.45;
+        letter-spacing: 0.06em;
+        color: #5b9843;
+        margin-top: 0.7em;
+    }
+
+    section.job-role .job-role__content > p {
+        font-size: clamp(calc(1.5rem * 0.672), 1.05vw, 1.5rem);
+        line-height: 2;
+        letter-spacing: 0.06em;
+        margin-top: 0.8em;
+    }
+
+    section.job-role .job-role__members {
+        width: 30.62vw;
+		width: 30.62cqw;
+		max-width: 438px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+    }
+
+    section.job-role .job-role__members--wide {
+        width: 63.49vw!important;
+		width: 63.49cqw !important;
+        max-width: 908px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        bottom: clamp(calc(-38px * 0.672), -2.66vw, -25px);
+    }
+
+    section.job-role .job-member {
+        width: 90%;
+		max-width: 435px;
+        height: clamp(calc(145px * 0.672), 10.13vw, 145px);
+        display: flex;
+        align-items: center;
+        color: #fff;
+        background: #6faf69;
+        border-radius: clamp(calc(8px * 0.672), 0.56vw, 8px);
+        padding: 0.7em 0 0.7em 9.2%;
+        position: relative;
+    }
+
+    section.job-role .job-role__members--wide .job-member {
+        width: 47.9%;
+    }
+
+    section.job-role .job-member > img {
+        width: 30%;
+        object-fit: contain;
+        object-position: bottom;
+        position: absolute;
+        left: 6%;
+        bottom: 0;
+    }
+
+    section.job-role .job-member__profile {
+        width: 58%;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 37%;
+    }
+
+    section.job-role .job-member strong {
+        font-size: clamp(calc(1.4rem * 0.672), 0.98vw, 1.4rem);
+		font-weight: 500;
+        letter-spacing: 0.08em;
+        white-space: nowrap;
+    }
+
+    section.job-role .job-member small {
+        font-size: clamp(calc(1.2rem * 0.672), 0.83vw, 1.2rem);
+        line-height: 1.5;
+        margin-top: 0.35em;
+        white-space: nowrap;
+    }
+
+    section.job-role .job-member em {
+        width: 80%;
+        display: block;
+        font-size: clamp(calc(1.1rem * 0.672), 0.77vw, 1.1rem);
+        font-style: normal;
+        color: #5b9843;
+        background: #fff url("../images/common/icon_more_btn_green.svg") right 0.8em center / 1.2em auto no-repeat;
+        margin-top: 0.7em;
+        padding: 1em 2.5em 1em 1em;
+		border-radius: 0 clamp(calc(8px * 0.672), 0.56vw, 8px) 0 clamp(calc(8px * 0.672), 0.56vw, 8px);
+        white-space: nowrap;
+    }
+
+    section.job-overview {
+        padding: clamp(calc(34px * 0.672), 2.38vw, 34px) 0 0;
+    }
+
+    section.job-overview .section_inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    section.job-overview .job-overview__item {
+        width: 47%;
+        position: relative;
+    }
+
+    section.job-overview figure {
+        line-height: 0;
+        overflow: hidden;
+        border-radius: 0 clamp(calc(20px * 0.672), 1.4vw, 20px) 0 clamp(calc(20px * 0.672), 1.4vw, 20px);
+        margin-bottom: clamp(calc(32px * 0.672), 2.24vw, 32px);
+    }
+
+    section.job-overview figure img {
+        width: 100%;
+        aspect-ratio: 1.34 / 1;
+        object-fit: cover;
+    }
+
+    section.job-overview .job-role__heading,
+    .job-departments__list section {
+        border-top: 1px solid #333;
+    }
+
+    section.job-overview .job-role__heading span,
+    .job-departments__list section > span {
+        display: block;
+         font-size: clamp(calc(1.6rem * 0.672), 1.11vw, 1.6rem);
+        font-weight: 600;
+        border-bottom: 1px solid #333;
+        padding: 0.55em 0;
+    }
+
+    section.job-overview h4,
+    section.job-departments h4 {
+        font-size: clamp(calc(2.4rem * 0.672), 1.68vw, 2.4rem);
+        color: #5b9843;
+        margin-top: 0.7em;
+    }
+
+    section.job-overview p,
+    section.job-departments p {
+        font-size: clamp(calc(1.6rem * 0.672), 1.11vw, 1.6rem);
+        line-height: 1.9;
+        letter-spacing: 0.04em;
+        margin-top: 0.7em;
+    }
+
+    section.job-overview .job-overview__chara {
+        width: 24%;
+        position: absolute;
+        right: -12%;
+        top: 55%;
+        z-index: 3;
+    }
+
+    .job-departments__list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: clamp(calc(30px * 0.672), 2.09vw, 30px);
+    }
+
+    .job-departments__list section {
+        width: 47%;
+        scroll-margin-top: 130px;
+    }
+
+    .job-departments__list section:nth-child(n + 3) {
+       margin-top: clamp(calc(30px * 0.672), 2.09vw, 30px);
+    }
+
+    .job-departments__list section > span:first-child:empty {
+        display: block;
+        border: 0;
+        padding: 0;
+    }
+
+    section.job-departments__member {
+        width: 30.62vw;
+        max-width: 438px;
+        padding: 0;
+        margin-top: clamp(calc(70px * 0.672), 4.9vw, 70px);
+    }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1430px) {
+	
+	section.job-intro .job-intro__chara {
+		top: -7.7vw;
+    }
+	
+	#job-loan .section_inner {
+		padding-bottom: 10.48vw;
+		padding-bottom: 10.48cqw;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	
+	div#page_title div.title_box {
+		min-width: 64%;
+	}
+	
+    section.job-intro {
+        min-height: clamp(calc(300px * 0.375), 31.25vw, 300px);
+        padding: clamp(calc(118px * 0.375), 12.29vw, 118px) 0 clamp(calc(72px * 0.375), 7.5vw, 72px);
+    }
+
+    section.job-intro .section_inner {
+        padding-top: clamp(calc(48px * 0.375), 5vw, 48px);
+        position: relative;
+    }
+
+    section.job-intro .job-intro__chara {
+        width: clamp(calc(260px * 0.375), 27.08vw, 260px);
+        line-height: 0;
+        position: absolute;
+        top: clamp(calc(-272px * 0.375), -28.33vw, -102px);
+        left: 0;
+        z-index: 5;
+        pointer-events: none;
+    }
+
+    section.job-intro p {
+        width: 100%;
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        line-height: 1.9;
+        letter-spacing: 0.04em;
+    }
+
+    section.job-map {
+        background: url("../images/common/bg_dot.png") repeat;
+        background-size: clamp(calc(8px * 0.375), 0.83vw, 8px);
+        padding: clamp(calc(100px * 0.375), 10.42vw, 100px) 0 clamp(calc(120px * 0.375), 12.5vw, 120px);
+    }
+
+    section.job-map h3 {
+        margin-bottom: clamp(calc(48px * 0.375), 5vw, 48px);
+    }
+
+    section.job-map .job-map__customer {
+        width: 100%;
+        margin: -3.5% auto 0;
+        line-height: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    section.job-map .job-map__group {
+        background: #fff;
+        border: clamp(calc(6px * 0.375), 0.63vw, 6px) solid #6faf69;
+        border-radius: clamp(calc(20px * 0.375), 2.08vw, 20px);
+        padding: clamp(calc(68px * 0.375), 7.08vw, 68px) 7% clamp(calc(76px * 0.375), 7.92vw, 76px);
+        position: relative;
+        z-index: 3;
+    }
+
+    section.job-map .job-map__connector {
+        width: 34%;
+        aspect-ratio: 248.11 / 95.45;
+        display: block;
+        background: url("../images/job/arrow_up.svg") center / contain no-repeat;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        z-index: 3;
+    }
+
+    section.job-map .job-map__connector--branch {
+        margin-top: -4.5%;
+        margin-bottom: -4%;
+    }
+
+    section.job-map .job-map__connector--headquarters {
+        margin-top: clamp(calc(-28px * 0.375), -2.92vw, -10px);
+        margin-bottom: clamp(calc(-16px * 0.375), -1.67vw, -6px);
+    }
+
+    section.job-map .job-map__group h4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: clamp(calc(5rem * 0.375), 5.21vw, 5rem);
+        line-height: 1.25;
+        letter-spacing: 0.08em;
+        color: #6faf69;
+    }
+
+    section.job-map .job-map__group h4 img {
+        width: clamp(calc(120px * 0.375), 12.5vw, 120px);
+        height: clamp(calc(105px * 0.375), 10.94vw, 105px);
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        right: calc(100% + 0.7em);
+        transform: translateY(-50%);
+    }
+
+    section.job-map .job-map__group h4 span {
+        border-bottom: 2px solid #6faf69;
+        padding-bottom: 0.25em;
+        position: relative;
+    }
+
+    section.job-map .job-map__group ul {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(calc(24px * 0.375), 2.5vw, 24px);
+        margin-top: clamp(calc(48px * 0.375), 5vw, 48px);
+    }
+
+    section.job-map .job-map__group a {
+        min-height: clamp(calc(92px * 0.375), 9.58vw, 92px);
+        display: flex;
+        align-items: center;
+        font-size: clamp(calc(3.8rem * 0.375), 3.96vw, 3.8rem);
+        line-height: 1.35;
+        letter-spacing: 0.04em;
+        color: #fff;
+        background: #6faf69 url("../images/job/arrow_y.svg") right 5% center / clamp(calc(42px * 0.375), 4.38vw, 42px) auto no-repeat;
+        border-radius: 0 clamp(calc(18px * 0.375), 1.88vw, 18px) 0 clamp(calc(18px * 0.375), 1.88vw, 18px);
+        padding: 0.75em 3em 0.75em 1.25em;
+    }
+
+    section.job-map .job-map__chara {
+        width: 18%;
+        position: absolute;
+        right: 5%;
+        z-index: 5;
+        pointer-events: none;
+    }
+
+    section.job-map .job-map__chara--branch {
+        top: -20vw;
+		top: -20cqw;
+        bottom: auto;
+    }
+
+    section.job-map .job-map__chara--headquarters {
+        right: 7%;
+        bottom: -13%;
+    }
+
+    section.job-roles {
+        padding: clamp(calc(100px * 0.375), 10.42vw, 100px) 0 clamp(calc(120px * 0.375), 12.5vw, 120px);
+    }
+
+    section.job-roles > .section_inner {
+        margin-bottom: clamp(calc(60px * 0.375), 6.25vw, 60px);
+    }
+
+    section.job-role {
+        padding-bottom: clamp(calc(120px * 0.375), 12.5vw, 120px);
+        position: relative;
+    }
+
+    section.job-role .section_inner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+
+    section.job-role .job-role__bg {
+        width: 92%;
+        height: 72%;
+        display: block;
+        background: #f7f3f0;
+        position: absolute;
+        bottom: 5%;
+        z-index: 0;
+    }
+
+    section.job-role--left .job-role__bg {
+        left: 0;
+        transform-origin: left center;
+    }
+
+    section.job-role--right .job-role__bg {
+        right: 0;
+        transform-origin: right center;
+    }
+
+    section.job-role .job-role__photo {
+        width: 100%;
+        line-height: 0;
+        overflow: hidden;
+        border-radius: 0 clamp(calc(24px * 0.375), 2.5vw, 24px) 0 clamp(calc(24px * 0.375), 2.5vw, 24px);
+    }
+
+    section.job-role .job-role__photo img {
+        width: 100%;
+        aspect-ratio: 1.244 / 1;
+        object-fit: cover;
+    }
+
+    section.job-role .job-role__content {
+        width: 100%;
+        margin-top: clamp(calc(52px * 0.375), 5.42vw, 52px);
+    }
+
+    section.job-role .job-role__heading {
+        border-top: 1px solid #333;
+    }
+
+    section.job-role .job-role__heading span {
+        display: block;
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        font-weight: 600;
+        border-bottom: 1px solid #333;
+        padding: 0.55em 0;
+    }
+
+    section.job-role .job-role__heading h4 {
+        font-size: clamp(calc(5rem * 0.375), 5.21vw, 5rem);
+        line-height: 1.45;
+        letter-spacing: 0.06em;
+        color: #5b9843;
+        margin-top: 0.7em;
+    }
+
+    section.job-role .job-role__content > p {
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        line-height: 1.9;
+        letter-spacing: 0.04em;
+        margin-top: 0.8em;
+    }
+
+    section.job-role .job-role__members,
+    section.job-role .job-role__members--wide {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(calc(36px * 0.375), 3.75vw, 36px);
+        margin-top: clamp(calc(80px * 0.375), 8.33vw, 80px);
+        position: static;
+    }
+
+    section.job-role .job-role__members--wide {
+        order: 3;
+    }
+
+    section.job-role .job-member,
+    section.job-role .job-role__members--wide .job-member {
+        width: 100%;
+        min-height: clamp(calc(209px * 0.375), 21.77vw, 209px);
+        display: flex;
+        align-items: center;
+        color: #fff;
+        background: #6faf69;
+        border-radius: clamp(calc(14px * 0.375), 1.46vw, 14px);
+        padding: 0.7em 5%;
+        position: relative;
+    }
+
+    section.job-role .job-member > img {
+        width: 30%;
+        max-height: 145%;
+        object-fit: contain;
+        object-position: bottom;
+        position: absolute;
+        left: 3%;
+        bottom: 0;
+    }
+
+    section.job-role .job-member__profile {
+        width: 58%;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 37%;
+    }
+
+    section.job-role .job-member strong {
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        white-space: nowrap;
+    }
+
+    section.job-role .job-member small {
+        font-size: clamp(calc(3rem * 0.375), 3.13vw, 3rem);
+		font-size: clamp(calc(2.8rem * 0.375), 2.91vw, 2.8rem);
+        line-height: 1.5;
+        margin-top: 0.3em;
+        white-space: nowrap;
+    }
+
+    section.job-role .job-member em {
+        width: 90%;
+        display: block;
+        font-size: clamp(calc(3rem * 0.375), 3.13vw, 3rem);
+        font-style: normal;
+        color: #5b9843;
+        background: #fff url("../images/common/icon_more_btn_green.svg") right 0.8em center / 1.2em auto no-repeat;
+        margin-top: 0.65em;
+        padding: 1em 2.5em 1em 1em;
+        border-radius: 0 clamp(calc(14px * 0.375), 1.46vw, 14px) 0 clamp(calc(14px * 0.375), 1.46vw, 14px);
+        white-space: nowrap;
+    }
+
+    section.job-overview {
+        padding: 0;
+    }
+
+    section.job-overview .section_inner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    section.job-overview .job-overview__item + .job-overview__item {
+        margin-top: clamp(calc(90px * 0.375), 9.38vw, 90px);
+    }
+
+    section.job-overview figure {
+        line-height: 0;
+        overflow: hidden;
+        border-radius: 0 clamp(calc(24px * 0.375), 2.5vw, 24px) 0 clamp(calc(24px * 0.375), 2.5vw, 24px);
+        margin-bottom: clamp(calc(42px * 0.375), 4.38vw, 42px);
+    }
+
+    section.job-overview figure img {
+        width: 100%;
+        aspect-ratio: 1.34 / 1;
+        object-fit: cover;
+    }
+
+    section.job-overview .job-role__heading,
+    .job-departments__list section {
+        border-top: 1px solid #333;
+    }
+
+    section.job-overview .job-role__heading span,
+    .job-departments__list section > span {
+        display: block;
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        font-weight: 600;
+        border-bottom: 1px solid #333;
+        padding: 0.55em 0;
+    }
+
+    section.job-overview h4,
+    section.job-departments h4 {
+        font-size: clamp(calc(5rem * 0.375), 5.21vw, 5rem);
+        color: #5b9843;
+        margin-top: 0.7em;
+    }
+
+    section.job-overview p,
+    section.job-departments p {
+        font-size: clamp(calc(3.6rem * 0.375), 3.75vw, 3.6rem);
+        line-height: 1.9;
+        letter-spacing: 0.04em;
+        margin-top: 0.7em;
+    }
+
+    section.job-overview .job-overview__chara {
+        width: 20%;
+        position: absolute;
+        right: -2%;
+        top: 42%;
+        z-index: 3;
+        pointer-events: none;
+    }
+
+    .job-departments__list {
+        display: flex;
+        flex-direction: column;
+        margin-top: clamp(calc(100px * 0.375), 10.42vw, 100px);
+    }
+
+    .job-departments__list section {
+        scroll-margin-top: 90px;
+    }
+
+    .job-departments__list section + section {
+        margin-top: clamp(calc(76px * 0.375), 7.92vw, 76px);
+    }
+
+    .job-departments__list section > span:first-child:empty {
+        display: block;
+        border: 0;
+        padding: 0;
+    }
+
+    section.job-departments__member {
+        width: 100%;
+        padding: 0;
+        margin-top: clamp(calc(90px * 0.375), 9.38vw, 90px);
+    }
+}
+
+[data-aos="job-bg-left"],
+[data-aos="job-bg-right"] {
+    transform: scaleX(0);
+    transition-property: transform;
+}
+
+[data-aos="job-bg-left"].aos-animate,
+[data-aos="job-bg-right"].aos-animate {
+    transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [data-aos="job-bg-left"],
+    [data-aos="job-bg-right"] {
+        transform: scaleX(1);
+        transition: none;
+    }
+}

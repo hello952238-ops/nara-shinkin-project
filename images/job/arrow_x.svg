@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.74 25.84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3.46px;
+      }
+
+      .cls-2 {
+        fill: #6faf69;
+      }
+    </style>
+  </defs>
+  <g id="_背景" data-name="背景">
+    <g>
+      <ellipse class="cls-2" cx="14.37" cy="12.92" rx="14.37" ry="12.92"/>
+      <polyline class="cls-1" points="12.34 6.75 19.2 12.92 12.34 19.09"/>
+    </g>
+  </g>
+</svg>
